@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<style>
+
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#ced4da;
+	font-family:'poppins',sans-serif;
+}
+
+#navbar{
+	width:100%;
+	padding:10px;
+	background-color:white;
+	font-size:10px;
+}
+
+#go-back{
+	width:5%;
+	padding:15px;
+	margin:20px 20px;
+	background-color:white;
+}
+
+#go-back a{
+	text-decoration:none;
+	color:black;
+}
+
+#go-back:hover{
+	background-color:#dee2e6;
+}
+#navbar .nav-elements{
+	width:30%;
+	display:inline-block;
+}
+
+#navbar .nav-elements:nth-child(2){
+	width:20%;
+	justify-content:right;
+	text-align:right;
+}
+
+#header{
+	width:70%;
+	height:100px;
+	padding:20px 20px;
+	text-align:center;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom:2px solid #dddddd;
+	background-color:white;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+
+.container{
+	width:70%;
+	padding:20px 20px;
+	height:1250px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:white;
+}
+
+.form-titles{
+	margin-left:25px;
+	padding-left:5px;
+	font-size:20px;
+}
+
+.form-inputs{
+	margin-left:25px;
+	padding:10px 10px;
+	width:40%;
+	border:2px solid #dddddd;
+	font-size:15px;
+}
+
+#text-area{
+	margin-left:25px;
+	padding:10px 10px;
+	width:90%;
+	height:15%;
+	border:2px solid #dddddd;
+	font-size:15px;
+}
+
+#upload-area{
+    margin-left:25px;
+	padding:10px 10px;
+	width:90%;
+	height:15%;
+	border:2px solid #dddddd;
+	font-size:15px;
+	
+}
+
+#submit{
+	width:25%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px 30px;
+	text-align:center;
+	background-color:#dee2e6;
+	border:2px solid #dddddd;
+	font-size:15px;
+	font-weight:bold;
+}
+
+#submit:hover{
+	background-color:#6c757d;
+	color:white;
+}
+
+#footer{
+	width:70%;
+	height:170px;
+	padding:20px 20px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:100px;
+	border-top:2px solid #dddddd;
+	background-color:white;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
+#footer #tick-box{
+	padding-right:60px;
+	padding-left:60px;
+}
+
+
+</style>
+
+<body>
+	<div id="navbar">
+	<div class="nav-elements">
+	<h1 >Online Job Application Form</h1>
+	</div>
+	</div>
+	<div id="header">
+	<h1>Job Application Form</h1>
+	<p>Please fill out the form below to submit your Job Application!</p>
+	</div>
+	<form class="container">
+		<label class="form-titles">Name *</label><br><br>
+		<input class="form-inputs" type="text" alt="value" placeholder="First Name"/>
+		<br>
+		<br>
+		<br>
+
+		<label class="form-titles">Last Name</label><br><br>
+		<input class="form-inputs" type="text" alt="value" placeholder="Last Name" />
+		<br>
+		<br>
+		<br>
+		
+		<label class="form-titles">E-mail *</label><br><br>
+		<input class="form-inputs" type="text" alt="value" placeholder="example@gmail.com"/>
+		<br>
+		<br>
+		<br>
+		
+		<label class="form-titles">Phone number *</label><br><br>
+		<input class="form-inputs" type="text" alt="value" placeholder="(000) 000-0000"/>
+		<br>
+		<br>
+		<br>
+		
+		<label class="form-titles">Application Position</label><br><br>
+		<input class="form-inputs" type="text" alt="value" />
+		<br>
+		<br>
+		<br>
+		
+		<label class="form-titles">Preferred Interview Date</label><br><br>
+		<input class="form-inputs" type="Date" alt="value" />
+		<br>
+		<br>
+		<br>
+		
+		<label class="form-titles">Cover Letter</label><br><br>
+		<textarea id="text-area" rows="4" cols="50"></textarea>
+		<br>
+		<br>
+		<br>
+		
+		<label class="form-titles">Upload Resume</label><br><br>
+		<input id="upload-area" type="file" rows="100" cols="100"/>
+		<br>
+		<br>
+		<br>
+		
+	</form>
+	
+	<div id="footer">
+		<input id="submit" type="button" value="Apply"/><br><br>
+		<div id="tick-box">
+		<input type="checkbox" />
+		<label>I hereby declare that all the information provided in this application is true to the best of my knowledge and belief. I understand that if any part of the information is found to be false or incorrect, my candidature is liable to be cancelled.</label>
+		</div>
+	</div>
+
+	<div id="go-back">
+		<a href="./index.html">Go back</a>
+	</div>
+
+</body>
+</html>
