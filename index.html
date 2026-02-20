@@ -52,7 +52,7 @@ header{
 }
 
 .table-content{
-	display:flex;
+	width:100%;
 	justify-content:center;
 	background-color: #f1f1f1;
 	padding:0px 0;
@@ -64,6 +64,7 @@ header{
 
 table{
 	text-align:center;
+	display:flex;
 	border-collapse:collapse;
 	font-size:18px;
 	font-family:'poppins',sans-serif;
@@ -150,14 +151,12 @@ footer{
 	font-family:'poppins',sans-serif;
 }
 
-
-
-@media screen and(min-width:300px){
-	.navbar{
-		width:110%;
-		flex:10%;
-	}
+@media screen and (max-width: 500px) {
+  .table-content{
+    flex:10%;
+  }
 }
+
 
 </style>
 <header>
@@ -188,7 +187,7 @@ Hypertext refers to links connecting web pages, while markup is the annotation o
 	</div>
 		<h1 id="task-title">Daily Task Progress</h1>
 	<div class="table-content">
-	<table>
+	<table class="table-content">
 		<tr>
 			<th>DATE</th>
 			<th>DESCRIPTION</th>
