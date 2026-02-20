@@ -1,0 +1,132 @@
+
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#ced4da;
+	font-family:'poppins',sans-serif;
+}
+
+#navbar{
+	width:100%;
+	padding:10px;
+	background-color:white;
+	font-size:10px;
+}
+
+#go-back{
+	width:5%;
+	padding:15px;
+	margin:20px 20px;
+	background-color:white;
+}
+
+#go-back a{
+	text-decoration:none;
+	color:black;
+}
+
+#go-back:hover{
+	background-color:#dee2e6;
+}
+#navbar .nav-elements{
+	width:30%;
+	display:inline-block;
+}
+
+#navbar .nav-elements:nth-child(2){
+	width:20%;
+	justify-content:right;
+	text-align:right;
+}
+
+#header{
+	width:70%;
+	height:100px;
+	padding:20px 20px;
+	text-align:center;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom:2px solid #dddddd;
+	background-color:white;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+
+.container{
+	width:70%;
+	padding:20px 20px;
+	height:1250px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:white;
+}
+
+.form-titles{
+	margin-left:25px;
+	padding-left:5px;
+	font-size:20px;
+}
+
+.form-inputs{
+	margin-left:25px;
+	padding:10px 10px;
+	width:40%;
+	border:2px solid #dddddd;
+	font-size:15px;
+}
+
+#text-area{
+	margin-left:25px;
+	padding:10px 10px;
+	width:90%;
+	height:15%;
+	border:2px solid #dddddd;
+	font-size:15px;
+}
+
+#upload-area{
+    margin-left:25px;
+	padding:10px 10px;
+	width:90%;
+	height:15%;
+	border:2px solid #dddddd;
+	font-size:15px;
+	
+}
+
+#submit{
+	width:25%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px 30px;
+	text-align:center;
+	background-color:#dee2e6;
+	border:2px solid #dddddd;
+	font-size:15px;
+	font-weight:bold;
+}
+
+#submit:hover{
+	background-color:#6c757d;
+	color:white;
+}
+
+#footer{
+	width:70%;
+	height:170px;
+	padding:20px 20px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:100px;
+	border-top:2px solid #dddddd;
+	background-color:white;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
+#footer #tick-box{
+	padding-right:60px;
+	padding-left:60px;
+}

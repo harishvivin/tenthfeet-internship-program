@@ -19,14 +19,16 @@ body{
 
 header{
 	padding:1px;
+	display:flex;
+	justify-content:center;
 	background-color:#ff8c00;
 	color:white;
 	text-align:center;
 	font-family:'poppins',sans-serif;
 }
-
 .navbar{
-	display:flex;	
+	display:flex;
+	flex-wrap:wrap;
 	background-color:#333;
 	height:40px;
 }
@@ -41,22 +43,22 @@ header{
 	background-color:black;
 	color:white;
 }
+	
 
-.container {  
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.side{
-	background-color: #f1f1f1;
-	padding:0px 0;
-	border-right:2px solid #dddddd;
-}
-
-.main{
-	flex:20%;
+.main-content{
 	border-right:2px solid #dddddd;
 	padding: 0px 20px;
+}
+
+.table-content{
+	display:flex;
+	justify-content:center;
+	background-color: #f1f1f1;
+	padding:0px 0;
+}
+
+#task-title{
+	text-align:center;
 }
 
 table{
@@ -145,9 +147,19 @@ footer{
 	font-family:'poppins',sans-serif;
 }
 
+
+
+@media screen and(min-width:300px){
+	.navbar{
+		flex:30%;
+		flex-shrink:2;
+	}
+}
+
+
 </style>
 <header>
-	<h1>Daily Task progress</h1>
+	<h1>Frontend Development</h1>
 </header>
 
 
@@ -159,7 +171,22 @@ footer{
 		<a class="links" href="https://www.w3schools.com/js/default.asp" target="_blank">JAVA SCRIPT</a>
 	</div>
 	<div class="container">
-	<div class="side">
+	
+	<div class="main-content">
+		<h1 class="parah">HTML<small>&nbsp - Hyper Text Markup Language </small></h1>
+		<p class="para">HTML (HyperText Markup Language) is the standard markup language used to create and structure web pages. It defines the meaning and structure of content using elements and tags, which browsers interpret to display text, images, links, and other media.
+
+Hypertext refers to links connecting web pages, while markup is the annotation of content with tags like p, h1, a,0etc., to define its role and presentation.</p>
+		<h1 class="parah">CSS<small>&nbsp - Cascading Style Sheets</small></h1>
+		<ul class="para">
+			<li>CSS stands for Cascading Style Sheets</li>
+			<li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+			<li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+			<li>External stylesheets are stored in CSS files</li>
+		</ul>
+	</div>
+		<h1 id="task-title">Daily Task Progress</h1>
+	<div class="table-content">
 	<table>
 		<tr>
 			<th>DATE</th>
@@ -247,31 +274,31 @@ footer{
 		 
 		 <tr class="active-row">
 			<td>16/2/2026</td>
-			<td>External css applying</td>
+			<td>Internal css applying</td>
 			<td>Tasks</td>
 		 </tr>
 		 
 		 <tr>
 			<td>1</td>
-			<td>Table_2 with external CSS</td>
+			<td>Table_2 with internal CSS</td>
 			<td class="button"><a href="./table2_css.html" target="_blank">Veiw task</a></td>
 		 </tr>
 		 
 		  <tr>
 			<td>2</td>
-			<td>Table_3 with external CSS</td>
+			<td>Table_3 with internal CSS</td>
 			<td class="button"><a href="./table3_css.html" target="_blank">Veiw task</a></td>
 		 </tr>
 		 
 		 <tr>
 			<td>3</td>
-			<td>Table_4 with external CSS</td>
+			<td>Table_4 with internal CSS</td>
 			<td class="button"><a href="./table4_css.html" target="_blank">Veiw task</a></td>
 		 </tr>
 		
 		<tr>
 			<td>4</td>
-			<td>Table_5 with external CSS</td>
+			<td>Table_5 with internal CSS</td>
 			<td class="button"><a href="./table5_css.html" target="_blank">Veiw task</a></td>
 		 </tr>
 		 
@@ -295,20 +322,6 @@ footer{
 
 
 	</table>
-	</div>
-	
-	<div class="main">
-		<h1 class="parah">HTML<small>&nbsp - Hyper Text Markup Language </small></h1>
-		<p class="para">HTML (HyperText Markup Language) is the standard markup language used to create and structure web pages. It defines the meaning and structure of content using elements and tags, which browsers interpret to display text, images, links, and other media.
-
-Hypertext refers to links connecting web pages, while markup is the annotation of content with tags like p, h1, a,0etc., to define its role and presentation.</p>
-		<h1 class="parah">CSS<small>&nbsp - Cascading Style Sheets</small></h1>
-		<ul class="para">
-			<li>CSS stands for Cascading Style Sheets</li>
-			<li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
-			<li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
-			<li>External stylesheets are stored in CSS files</li>
-		</ul>
 	</div>
 	
 	</div>
