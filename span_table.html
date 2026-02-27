@@ -2,60 +2,74 @@
 <html>
 <head>
 	<h1>sample table</h1>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <a href="./index.html">Go back</a>
+	
+<style>
+tr{
+	border:2px solid black;
+}
+th{
+	border:2px solid black;
+}
+td{
+	border:2px solid black;
+}
+
+</style>
 </head>
 <body>
 
-<table style="border:2px solid black;">
+<table class="table" >
 	<tr>
-		<th rowspan="3" style="border:2px solid black;">Date</th>
-		<th colspan="3" style="border:2px solid black;">seminar</th>
+		<th rowspan="3">Date</th>
+		<th colspan="3">seminar</th>
 	</tr>
 	
 	<tr>
-		<th colspan="2" style="border:2px solid black;"> schedule</th>
-		<th rowspan="2" style="border:2px solid black;"> topic </th>
+		<th colspan="2"> schedule</th>
+		<th rowspan="2"> topic </th>
 	</tr>
 	
 	<tr>
-		<th style="border:2px solid black;">begin</th>
-		<th style="border:2px solid black;">end</th>	
+		<th>begin</th>
+		<th>end</th>	
 	</tr>
 	
 	<tr>
-		<td rowspan="2" style="border:2px solid black;">monday </td>
-		<td rowspan="2" style="border:2px solid black;">8.00am</td>
-		<td rowspan="2" style="border:2px solid black;">5.00pm</td>
-		<td style="border:2px solid black;">introduction to xml</td>
+		<td rowspan="2">monday </td>
+		<td rowspan="2">8.00am</td>
+		<td rowspan="2">5.00pm</td>
+		<td>introduction to xml</td>
 	</tr>
 	
 	<tr>
-		<td style="border:2px solid black;">validity DTD and Relax NG</td>
+		<td>validity DTD and Relax NG</td>
 	</tr>
 	
 	<tr>
-		<td rowspan="3" style="border:2px solid black;">Tuesday</td>
-		<td style="border:2px solid black;"> 8.00 am</td>
-		<td style="border:2px solid black;"> 11.00 am</td>
-		<td style="border:2px solid black;"> x path</td>
+		<td rowspan="3">Tuesday</td>
+		<t> 8.00 am</td>
+		<td> 11.00 am</td>
+		<td> x path</td>
 	</tr>
 	
 	<tr>
-		<td style="border:2px solid black;">11.00 am</td>
-		<td style="border:2px solid black;">2.00 pm</td>
-		<td rowspan="2" style="border:2px solid black;">XSL Ttransformations </td>
+		<td>11.00 am</td>
+		<td>2.00 pm</td>
+		<td rowspan="2">XSL Ttransformations </td>
 	</tr>
 	
 	<tr>
-		<td style="border:2px solid black;"> 2.00 pm</td>
-		<td style="border:2px solid black;"> 5.00 pm</td>
+		<td> 2.00 pm</td>
+		<td> 5.00 pm</td>
     </tr>
 	
 	<tr>
-		<td style="border:2px solid black;">wednesday</td>
-		<td style="border:2px solid black;">8.00 am</td>
-		<td style="border:2px solid black;">12.00 pm</td>
-		<td style="border:2px solid black;">XSL formating Objects</td>
+		<td>wednesday</td>
+		<td>8.00 am</td>
+		<td>12.00 pm</td>
+		<td>XSL formating Objects</td>
 		
 	</tr>
 </table>
@@ -68,83 +82,83 @@
 	<h1>student table</h1>
 </head>	
 	
-	<table style="border-collapse:collapse;w;">
+	<table class="table "" style="border-collapse:collapse;w;">
 	
 	<tr>
-		<th rowspan="2" colspan="2" style="border:2px solid black;">Student</th>
-		<th colspan="4" style="border:2px solid black;">Exam</th>
-		<th colspan="4" style="border:2px solid black;">2nd Exam</th>
-		<th colspan="2" rowspan="2" style="border:2px solid black;">Final grade</th>
+		<th rowspan="2" colspan="2" class="">Student</th>
+		<th colspan="4">Exam</th>
+		<th colspan="4">2nd Exam</th>
+		<th colspan="2" rowspan="2">Final grade</th>
 	</tr>
 	
 	<tr>
-		<th style="border:2px solid black;">Q1</th>
-		<th style="border:2px solid black;">Q2</th>
-		<th style="border:2px solid black;">Q3</th>
-		<th rowspan="2" style="border:2px solid black;">Grade</th>
+		<th >Q1</th>
+		<th>Q2</th>
+		<th>Q3</th>
+		<th>Grade</th>
 		
-		<th style="border:2px solid black;">Q1</th>
-		<th style="border:2px solid black;">Q2</th>
-		<th style="border:2px solid black;">Q3</th>
-		<th rowspan="2" style="border:2px solid black;">Grade</th>
+		<th>Q1</th>
+		<th>Q2</th>
+		<th>Q3</th>
+		<th rowspan="2">Grade</th>
 	</tr>
 	
 	<tr>
-		<th style="border:2px solid black;">code</th>
-		<th style="border:2px solid black;">Name</th>
-		<th style="border:2px solid black;">8</th>
-		<th style="border:2px solid black;">7</th>
-		<th style="border:2px solid black;">5</th>
-		<th style="border:2px solid black;">6</th>
-		<th style="border:2px solid black;">7</th>
-		<th style="border:2px solid black;">8</th>
-		<th style="border:2px solid black;">NR</th>
-		<th style="border:2px solid black;">R</th>
+		<th>code</th>
+		<th>Name</th>
+		<th>8</th>
+		<th>7</th>
+		<th>5</th>
+		<th>6</th>
+		<th>7</th>
+		<th>8</th>
+		<th>NR</th>
+		<th>R</th>
 	</tr>
 	
 	<tr>
-		<td style="border:2px solid black;">80549061</td>
-		<td style="border:2px solid black;">john</td>
-		<td style="border:2px solid black;">70%</td>
-		<td style="border:2px solid black;">100%</td>
-		<td style="border:2px solid black;">100%</td>
-		<td style="border:2px solid black;">17.6</td>
-		<td style="border:2px solid black;"></td>
-		<td style="border:2px solid black;"></td>
-		<td style="border:2px solid black;"></td>
-		<td style="border:2px solid black;"></td>
-		<td style="border:2px solid black;">17.6</td>
-		<td style="border:2px solid black;">18</td>
+		<td>80549061</td>
+		<td>john</td>
+		<td>70%</td>
+		<td>100%</td>
+		<td>100%</td>
+		<td>17.6</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>17.6</td>
+		<td>18</td>
 	</tr>
 	
 	<tr>
-		<td style="border:2px solid black;">80549062</td>
-		<td style="border:2px solid black;">mary</td>
-		<td style="border:2px solid black;">10%</td>
-		<td style="border:2px solid black;">50%</td>
-		<td style="border:2px solid black;">50%</td>
-		<td style="border:2px solid black;">6.8</td>
-		<td style="border:2px solid black;">100%</td>
-		<td style="border:2px solid black;">100%</td>
-		<td style="border:2px solid black;">50%</td>
-		<td style="border:2px solid black;">16.5</td>
-		<td style="border:2px solid black;">16.5</td>
-		<td style="border:2px solid black;">17</td>
+		<td>80549062</td>
+		<td>mary</td>
+		<td>10%</td>
+		<td>50%</td>
+		<td>50%</td>
+		<td>6.8</td>
+		<td>100%</td>
+		<td>100%</td>
+		<td>50%</td>
+		<td>16.5</td>
+		<td>16.5</td>
+		<td>17</td>
 	</tr>
 	
 	<tr>
-		<td style="border:2px solid black;">80548065</td>
-		<td style="border:2px solid black;">claire</td>
-		<td style="border:2px solid black;"></td>
-		<td style="border:2px solid black;"></td>
-		<td style="border:2px solid black;"></td>
-		<td style="border:2px solid black;"></td>
-		<td style="border:2px solid black;">50%</td>
-		<td style="border:2px solid black;">50%</td>
-		<td style="border:2px solid black;">50%</td>
-		<td style="border:2px solid black;">10.0</td>
-		<td style="border:2px solid black;">10.0</td>
-		<td style="border:2px solid black;">10</td>
+		<td>80548065</td>
+		<td>claire</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>50%</td>
+		<td>50%</td>
+		<td>50%</td>
+		<td>10.0</td>
+		<td>10.0</td>
+		<td>10</td>
 	</tr>
 
 	

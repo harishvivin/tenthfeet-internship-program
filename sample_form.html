@@ -2,34 +2,36 @@
 <html>
 <head>
 	<h1>Employer details</h1>
-    <a href="./index.html">Go back</a>
+    <a class="btn btn-secondary" href="./index.html">Go back</a>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
 
 <body>
-	<form>
+	<form class="form">
 	<fieldset>
 		<legend>EMPLOYER DETAILS </legend
-		<label>Employee :</label>
-		<input type="name" placeholder="your name" /><br>
+		<label class="form-label">Employee :</label>
+		<input class="form-control-sm" type="name" placeholder="your name" /><br>
 		
-		<label>Last name :</label>
-		<input type="name" placeholder="your last name"><br><br>
+		<label class="form-label">Last name :</label>
+		<input class="form-control-sm" type="name" placeholder="your last name"><br><br>
 		
-		<label>Select your gender :</label><br>
-		<label>Male</label><input type="radio" name="gender" />
-		<label>Female</label><input type="radio" name="gender" /> <br><br>
+		<label class="form-label">Select your gender :</label>
+		<label >Male</label><input type="radio" name="gender" />
+		<label >Female</label><input type="radio" name="gender" /> <br><br>
 		
-		<label>select your DOB :</label>
-		<input type="date" /> <br><br>
+		<label class="form-label">select your DOB :</label>
+		<input class="form-control-sm" type="date" /> <br><br>
 		
-		<label>Enter Your age :</label>
-		<input type="number" value="23"/><br><br>
+		<label class="form-label">Enter Your age :</label>
+		<input class="form-control-sm" type="number" value="23"/><br><br>
 		
-		<label>Enter your salary :</label>
-		<input type="number" /><br><br>
+		<label class="form-label">Enter your salary :</label>
+		<input class="form-control-sm" type="number" /><br><br>
 		
-		<input type="submit" />
-		<input type="reset" value="reset" />
+		<input class="btn btn-primary" type="submit" />
+		<input class="btn btn-primary" type="reset" value="reset" />
 	</fieldset>
 	</form>
 

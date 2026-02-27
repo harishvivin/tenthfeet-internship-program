@@ -1,136 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 	
 </head>
 <style>
-
-.container{
-	display:flex;
-	justify-content:space-evenly;
-	}
-	
-.box{
-	height:40px;
-	width:100px;
-	padding:15px
-	}
-
-#box1{
-	background-color:green;
-	color:white;
-	text-align:center;
-	font-size:20px;
-	}
-
-#box2{
-	background-color:black;
-	color:white;
-	text-align:center;
-	font-size:20px;
-	}
-
-#box3{
-	background-color:black;
-	color:white;
-	text-align:center;
-	font-size:20px;
-	}
-
-#box4{
-	background-color:black;
-	color:white;
-	text-align:center;
-	font-size:30px;
-	width:1200px;
-	}
-	
-#box5{
-	background-color:green;
-	color:white;
-	text-align:center;
-	font-size:20px;
-	}
-	
-.gallery{
-	display:inline-block;
-	border:2px solid black;
-	margin:60px;
-}
-
-.gallery .description{
-	background-color:white;
-	padding:10px;
-	text-align:center;
-	font-size:15px;
-}
-
-.gallery:hover{
-	border:5px solid black;
+body{
+	background-color:#ced4da;
 }
 
 </style>
 
-<body style="background-color:yellow;">
-	<div class="container">
-	
-		<div class="box" id="box1">Tasks</div>
-		<div class="box" id="box2">Exercises</div>
-		<div class="box" id="box3">Contents</div>
-		<div class="box" id="box4">Image gallery </div>
-		<div class="box" id="box5">About</div>
-	
-	</div>
-	<p><a href="./index.html">Go back</a></p>
-	<br><br>
-	
-	<div class="gallery">
-		<a target="_black" href="index_image.png">
-		<img src="index_image.png" alt="main" width="600px" height="300px">
-		</a>
-		<div class="description">main Index page</div>
+<body>
+	<header class="bg-dark ps-3 pt-3">
+	<div class="row">
+		<div class="col">
+			<h4 class="h2 fw-bold text-light">IMAGE GALLERY</h4> 
 		</div>
+	<nav class=" col h5 d-flex justify-content-end text-white p-2 fw-bold">
+		<ul class="list-inline">
+		<li class="list-inline-item pe-3 "><a class="text-decoration-none fw-light text-light"href="#">Tasks</a></li>
+		<li class="list-inline-item pe-3 "><a class="text-decoration-none fw-light text-light"href="#">Exercises</a></li>
+		<li class="list-inline-item pe-3 "><a class="text-decoration-none fw-light text-light"href="#">Contents</a></a></li>
+		<li class="list-inline-item pe-3 "><a class="text-decoration-none fw-light text-light justify-content-end"href="#">About</a></li>
+		</ul>
+	</nav>
 	</div>
+	</header>
 	
-	<div class="gallery">
-		<a target="_black" href="index_image.png">
-		<img src="table_1.png" alt="main" width="600px" height="300px">
-		</a>
-		<div class="description">Sample table 1 page</div>
-		</div>
-	</div>
-	
-	<div class="gallery">
-		<a target="_black" href="index_image.png">
-		<img src="table_2.png" alt="main" width="600px" height="300px">
-		</a>
-		<div class="description">Sample table 2 page</div>
-		</div>
-	</div>
-	
-	<div class="gallery">
-		<a target="_black" href="index_image.png">
-		<img src="table_3.png" alt="main" width="600px" height="300px">
-		</a>
-		<div class="description">Sample table 3 page</div>
-		</div>
-	</div>
-	
-	<div class="gallery">
-		<a target="_black" href="index_image.png">
-		<img src="table_4.png" alt="main" width="600px" height="300px">
-		</a>
-		<div class="description">Sample table 4 page</div>
-		</div>
-	</div>
-	
-	<div class="gallery">
-		<a target="_black" href="index_image.png">
-		<img src="table_5.png" alt="main" width="600px" height="300px">
-		</a>
-		<div class="description">Sample table 5 page</div>
-		</div>
-	</div>
 
+	<div class="container-fluid pt-5">
+	<div class="row d-flex">
+	<div class="col-12 col-sm-6 col-lg-4 pb-5 ">
+		<a target="_black" href="index_image.png">
+		<img class="rounded" src="index_image.png" alt="main" width="400px" height="200px">
+		</a>
+		<h5 class="ms-5 ps-5">main Index page</h5>
+		</div>
+	
+	
+	<div class="col-12 col-sm-6 col-lg-4 pb-5">
+		<a target="_black" href="table_1.png">
+		<img class="rounded" src="table_1.png" alt="main" width="400px" height="200px">
+		</a>
+		<h5 class="ms-5 ps-5">Sample table 1 page</h5>
+		</div>
+	
+	
+	<div class="col-12 col-sm-6 col-lg-4 pb-5 ">
+		<a target="_black" href="table_2.png">
+		<img class="rounded" src="table_2.png" alt="main" width="400px" height="200px">
+		</a>
+		<h5 class="ms-5 ps-5">Sample table 2 page</h5>
+		</div>
+	
+	
+	<div class="col-12 col-sm-6 col-lg-4 pb-5">
+		<a target="_black" href="table_3.png">
+		<img class="rounded" src="table_3.png" alt="main" width="400px" height="200px">
+		</a>
+		<h5 class="ms-5 ps-5">Sample table 3 page</h5>
+		</div>
+	
+	
+	<div class="col-12 col-sm-6 col-lg-4 pb-5">
+		<a target="_black" href="table_4.png">
+		<img class="rounded" src="table_4.png" alt="main" width="400px" height="200px">
+		</a>
+		<h5 class="ms-5 ps-5">Sample table 4 page</h5>
+		</div>
+	
+	
+	<div class="col-12 col-sm-6 col-lg-4 pb-5">
+		<a target="_black" href="table_5.png">
+		<img class="rounded" src="table_5.png" alt="main" width="400px" height="200px">
+		</a>
+		<h5 class="ms-5 ps-5">Sample table 5 page</h5>
+		</div>
+	</div>
+	</div>
+	
+	<p class="btn btn-primary"><a class="text-decoration-none text-light" href="./index.html">Go back</a></p>
+	<br><br>
 </body>
 </html>
