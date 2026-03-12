@@ -30,17 +30,33 @@ footer{
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 
+#food_items_container{
+  height:560px;
+}
+
+@media (min-width: 768px) {
+  #food_items_container{
+    height: 410px;
+  }
+}
+
+@media (min-width: 992px) {
+  #food_items_container {
+    height: 400px;
+  }
+}
+
+
 </style>
 </head>
 
-<body class="">
-	<div class="container-fluid overflow-auto vh-100">
+<body>
+	<div class="container-fluid ">
 	<div class="row">
 	
 	<!--left side navbar -->
 	<nav class="col col-md-2 col-sm-3 col-lg-2 nav d-flex flex-column">
-		<header  class="mt-2 fs-4 text-center mt-1 mb-4"><img style="width:30px; height:30px" src="./food-cart.png"/> CHILI POS
-		</header>
+		<header  class="mt-2 fs-4 text-center mt-1 mb-4"><img style="width:30px; height:30px" src="./food-cart.png"/> CHILI POS</header>
 		
 		<div class="btn btn-outline-success custom-btn ps-1 mb-3 ms-2 py-2 fw-bold text-dark text-start rounded-5 border-0 d-flex"  href="#"><div class="mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-fork-knife text-success" viewBox="0 0 15 15">
   <path d="M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z"/>
@@ -72,7 +88,7 @@ footer{
 	</nav>
 		
 	<!--center block main content -->
-	<div style="background-color:#E8E8E8;" class="col-md-8 col-sm-6 col-lg-7 rounded-bottom-4">
+	<div style="background-color:#E8E8E8;" class="col-md-7 col-sm-6 col-lg-7 rounded-bottom-4">
 		<div class="container-fluid p-0">
 		<div class="d-flex">
 			<div class="col-1 flex-column btn btn-outline-success shadow rounded-4 border-0 bg-white p-0 pt-2 m-2">
@@ -102,7 +118,7 @@ footer{
 					<svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-grid text-success mb-4" viewBox="0 0 16 16">
   <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
 </svg>
-					<p style="font-weight:bold; font-size:14px" class="card-text m-0 fw-bold">All</p>
+					<p  class="card-text m-0 fw-bold">All</p>
 					<p style="font-size:13px" class="card-text">235 Items</p>
 				</div>
 			</div>
@@ -113,7 +129,7 @@ footer{
   <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
   <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
 </svg>
-					<p style="font-weight:bold; font-size:14px" class="card-text m-0 fw-bold">Breakfast</p>
+					<p class="card-text m-0 fw-bold">Breakfast</p>
 					<p style="font-size:13px" class="card-text">19 Items</p>
 				</div>
 			</div>
@@ -124,7 +140,7 @@ footer{
   <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6zM13 12.5a2 2 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5M2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175"/>
   <path d="m4.4.8-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 3.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 6.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 9.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8"/>
 </svg>
-					<p style="font-weight:bold; font-size:14px" class="card-text m-0 fw-bold">Soups</p>
+					<p class="card-text m-0 fw-bold">Soups</p>
 					<p style="font-size:13px" class="card-text">6 Items</p>
 				</div>
 			</div>			
@@ -134,7 +150,7 @@ footer{
 					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-egg text-success mb-4" viewBox="0 0 16 16">
   <path d="M8 15a5 5 0 0 1-5-5c0-1.956.69-4.286 1.742-6.12.524-.913 1.112-1.658 1.704-2.164C7.044 1.206 7.572 1 8 1s.956.206 1.554.716c.592.506 1.18 1.251 1.704 2.164C12.31 5.714 13 8.044 13 10a5 5 0 0 1-5 5m0 1a6 6 0 0 0 6-6c0-4.314-3-10-6-10S2 5.686 2 10a6 6 0 0 0 6 6"/>
 </svg>
-					<p style="font-weight:bold; font-size:14px" class="card-text m-0 fw-bold">Main Course</p>
+					<p  class="card-text m-0 fw-bold">Main Course</p>
 					<p style="font-size:13px" class="card-text">67 Items</p>
 				</div>
 			</div>	
@@ -144,7 +160,7 @@ footer{
 					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cup-straw text-success mb-4" viewBox="0 0 16 16">
   <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82q0 .069-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87s-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A1 1 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278M9.768 4.607A14 14 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.3 3.3 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a6 6 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69s2.081-.441 2.438-.69c.042-.029.09-.094.102-.215l.852-8.03a6 6 0 0 1-.435.127 9 9 0 0 1-.89.17zM4.467 4.884s.003.002.005.006zm7.066 0-.005.006zM11.354 5a3 3 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222"/>
 </svg>
-					<p style="font-weight:bold; font-size:14px" class="card-text m-0 fw-bold">Juice</p>
+					<p class="card-text m-0 fw-bold">Juice</p>
 					<p style="font-size:13px" class="card-text">14 Items</p>
 				</div>
 			</div>
@@ -154,16 +170,16 @@ footer{
 					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cup-straw text-success mb-4" viewBox="0 0 16 16">
   <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82q0 .069-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87s-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A1 1 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278M9.768 4.607A14 14 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.3 3.3 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a6 6 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69s2.081-.441 2.438-.69c.042-.029.09-.094.102-.215l.852-8.03a6 6 0 0 1-.435.127 9 9 0 0 1-.89.17zM4.467 4.884s.003.002.005.006zm7.066 0-.005.006zM11.354 5a3 3 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222"/>
 </svg>
-					<p style="font-weight:bold; font-size:14px" class="card-text m-0 fw-bold">Juice</p>
+					<p class="card-text m-0 fw-bold">Juice</p>
 					<p style="font-size:13px" class="card-text">14 Items</p>
 				</div>
 			</div>
 		</div>
 		
 		<!--foot items order placement in main container-->
-		<div style="height:560px" class="card-scroll-container d-flex overflow">
+		<div id="food_items_container" class="card-scroll-container d-flex overflow">
 		<div class="row g-3 overflow-y-auto overflow-x-hiddem">
-			<div class="col-sm-12 col-sm-4 col-md-4 col-lg-3 card  hover-effect text-center rounded-4 mt-2 mb-4 ms-md-1 me-md-1 ms-lg-4 ms-xl-5 me-lg-3 mt-lg-3 ms-lg-2">
+			<div class="col-sm-12 col-sm-4 col-md-5 col-lg-3 card  hover-effect text-center rounded-4 mt-2 mb-4 ms-md-4 me-md-3 ms-lg-5 ms-xl-5 me-xl-1  me-lg-3 mt-lg-3 ">
 				<img style="wigth:40px; height:130px" src="./burger.png" class=" ms-2 mt-3 me-2  rounded-4" alt="...">
 				<div class="card-body p-2">
 					<p  class="card-text m-0 fw-bold text-start">Chicken Burger</p>
@@ -173,7 +189,7 @@ footer{
 				</div>
 			</div>
 			
-			<div class="col-sm-12 col-sm-4 col-md-4 col-lg-3 card  hover-effect text-center rounded-4  mt-2 mb-4 ms-md-3 me-md-2 ms-lg-4 ms-xl-5 me-lg-3  mt-lg-3 ms-lg-2" >
+			<div class="col-sm-12 col-sm-4 col-md-5 col-lg-3 card  hover-effect text-center rounded-4  mt-2 mb-4 ms-md-4 me-md-3 ms-lg-4 ms-xl-5 me-xl-1 ms-xxl-5 me-lg-3  mt-lg-3 " >
 				<img style="wigth:40px; height:130px" src="./tacos.png" class=" ms-2 mt-3 me-2  rounded-4" alt="...">
 				<div class="card-body p-2">
 					<p  class="card-text m-0 fw-bold text-start">Tacos</p>
@@ -190,7 +206,7 @@ footer{
 				</div>
 			</div>
 			
-			<div class="col-sm-12 col-sm-4 col-md-4 col-lg-3 card  hover-effect text-center rounded-4  mt-2 mb-4 ms-md-2 me-md-2 ms-lg-4 ms-xl-5 me-lg-3 mt-lg-3 ms-lg-2" >
+			<div class="col-sm-12 col-sm-4 col-md-5 col-lg-3 card  hover-effect text-center rounded-4  mt-2 mb-4 ms-md-4 me-md-3 ms-lg-4 ms-xl-5 me-xl-1 ms-xxl-5 me-lg-3 mt-lg-3 ms-lg-2" >
 				<img style="wigth:40px; height:130px" src="./sandwich.png" class=" ms-2 mt-3 me-2  rounded-4" alt="...">
 				<div class="card-body p-2">
 					<p class="card-text m-0 fw-bold text-start">Sandwich</p>
@@ -201,7 +217,7 @@ footer{
 			</div>
 			
 			
-			<div class="col-sm-12 col-sm-4 col-md-4 col-lg-3 card  hover-effect text-center rounded-4 mt-2 mb-4 ms-md-1 me-md-1 ms-lg-4 ms-xl-5 me-lg-3 mt-lg-3 ms-lg-2" >
+			<div class="col-sm-12 col-sm-4 col-md-5 col-lg-3 card  hover-effect text-center rounded-4 mt-2 mb-4 ms-md-4 me-md-3 ms-lg-5 ms-xl-5 me-xl-1 ms-xxl-5 me-lg-3 mt-lg-3 ms-lg-2" >
 				<img style="wigth:40px; height:130px" src="./biriyani.png" class=" ms-2 mt-3 me-2  rounded-4" alt="...">
 				<div class="card-body p-2">
 					<p class="card-text m-0 fw-bold text-start">Chicken Biriyani</p>
@@ -211,7 +227,7 @@ footer{
 				</div>
 			</div>
 			
-			<div class="col-sm-12 col-sm-4 col-md-4 col-lg-3 card  hover-effect text-center rounded-4  mt-2 mb-4 ms-md-1 me-md-1 ms-lg-4 ms-xl-5 me-lg-3 mt-lg-3 ms-lg-2" >
+			<div class="col-sm-12 col-sm-4 col-md-5 col-lg-3 card  hover-effect text-center rounded-4  mt-2 mb-4 ms-md-4 me-md-3 ms-lg-4 ms-xl-5 me-xl-1 ms-xxl-5 me-lg-3 mt-lg-3 ms-lg-2" >
 				<img style="wigth:40px; height:130px" src="./orange-juice.png" class=" ms-2 mt-3 me-2  rounded-4" alt="...">
 				<div class="card-body p-2">
 					<p class="card-text m-0 fw-bold text-start">Orange Juice</p>
@@ -221,7 +237,7 @@ footer{
 				</div>
 			</div>
 			
-			<div class="col-sm-12 col-sm-4 col-md-4 col-lg-3 card  hover-effect text-center rounded-4  mt-2 mb-4 ms-md-1 me-md-1 ms-lg-4 ms-xl-5 me-lg-3 mt-lg-3 ms-lg-2" >
+			<div class="col-sm-12 col-sm-4 col-md-5 col-lg-3 card  hover-effect text-center rounded-4  mt-2 mb-4 ms-md-4 me-md-3 ms-lg-4 ms-xl-5 me-xl-1 ms-xxl-5 me-lg-3 mt-lg-3 ms-lg-2" >
 				<img style="wigth:40px; height:130px" src="./salad.png" class=" ms-2 mt-3 me-2  rounded-4" alt="...">
 				<div class="card-body p-2">
 					<p  class="card-text m-0 fw-bold text-start">Veg Salad</p>
@@ -231,7 +247,7 @@ footer{
 				</div>
 			</div>
 			
-						<div class="col-sm-12 col-sm-4 col-md-4 col-lg-3 card  hover-effect text-center rounded-4  mt-2 mb-3 ms-md-1 me-md-1 ms-lg-4 ms-xl-5 me-lg-3 mt-lg-3 ms-lg-2" >
+						<div class="col-sm-12 col-sm-4 col-md-5 col-lg-3 card  hover-effect text-center rounded-4  mt-2 mb-3 ms-md-4 me-md-3 ms-lg-5 ms-xl-5 me-xl-1 ms-xxl-5 me-lg-3 mt-lg-3 ms-lg-2" >
 				<img style="wigth:40px; height:130px" src="./salad.png" class=" ms-2 mt-3 me-2  rounded-4" alt="...">
 				<div class="card-body p-2">
 					<p  class="card-text m-0 fw-bold text-start">Veg Salad</p>
@@ -241,7 +257,7 @@ footer{
 				</div>
 			</div>
 			
-						<div class="col-sm-12 col-sm-4 col-md-4 col-lg-3 card  hover-effect text-center rounded-4  mt-2 mb-3 ms-md-1 me-md-1 ms-lg-4 ms-xl-5 me-lg-3 mt-lg-3 ms-lg-2" >
+						<div class="col-sm-12 col-sm-4 col-md-5 col-lg-3 card  hover-effect text-center rounded-4  mt-2 mb-3 ms-md-4 me-md-3 ms-lg-4 ms-xl-5 me-xl-1 ms-xxl-5 me-lg-3 mt-lg-3 ms-lg-2" >
 				<img style="wigth:40px; height:130px" src="./salad.png" class=" ms-2 mt-3 me-2  rounded-4" alt="...">
 				<div class="card-body p-2">
 					<p  class="card-text m-0 fw-bold text-start">Veg Salad</p>
@@ -258,7 +274,7 @@ footer{
 	</div>
 	
 		<!--right side info bar -->
-	<div class="col  col-md-2 col-sm-3 col-lg-3 ">
+	<div class="col  col-md-3 col-sm-3 col-lg-3 ">
 		<div class="container pe-0 me-0">
 			<div class="row d-flex p-0">
 				<div class="col-3 col-md-8">	
@@ -275,17 +291,17 @@ footer{
 				</div>
 			</div>
 			
-			<div class="btn-group w-100 shadow bg-success p-1 rounded-4 mt-3" >
-				<button type="button" class="btn text-white fw-bold">Dine in</button>
-				<button type="button" class="btn text-white fw-bold">Take Away</button>
-				<button type="button" class="btn text-white fw-bold">Delivery</button>
+			<div class="btn-group w-100 shadow bg-success p-1 rounded-4 mt-3 mt-md-1" >
+				<button type="button" class="btn text-white fw-bold m-md-0 p-md-0">Dine in</button>
+				<button type="button" class="btn text-white fw-bold m-md-0 p-md-0">Take Away</button>
+				<button type="button" class="btn text-white fw-bold m-md-0 p-md-0">Delivery</button>
 			</div>
 			
 			<!--bill items list container -->
 					
 			<div class="col-sm-12 col-sm-4 col-md-4 col-lg-3 card w-100 text-center rounded-4 mt-3 " >
-				<div class="card-body d-flex row p-2">
-					<img style="wigth:25px; height:60px" src="./salad.png" class="card-img-start p-0 col-2 ms-3 rounded-4" >
+				<div class="card-body d-flex row p-2 p-md-0">
+					<img style="wigth:25px; height:60px" src="./salad.png" class="card-img-start p-0 p-md-1 col-2 ms-3 rounded-4" >
 					<div class="col-9">
 					<p style="font-weight:bold; font-size:14px" class="card-text mt-2 m-0 fw-bold text-start">Veg Salad</p>
 					<div class=" d-flex"><div class="card-text text-success fw-bold text-start">$20.99</div> <div class="ms-2">1X</div>
@@ -295,8 +311,8 @@ footer{
 			</div>
 		
 			<div class="col-sm-12 col-sm-4 col-md-4 col-lg-3 card w-100  text-center rounded-4 mt-3 " >
-				<div class="card-body d-flex row p-2">
-					<img style="wigth:25px; height:60px" src="./burger.png" class="card-img-start p-0 col-2 ms-3 rounded-4" >
+				<div class="card-body d-flex row p-2 p-md-0">
+					<img style="wigth:25px; height:60px" src="./burger.png" class="card-img-start p-0 p-md-1 col-2 ms-3 rounded-4" >
 					<div class="col-9">
 					<p style="font-weight:bold; font-size:14px" class="card-text mt-2 m-0 fw-bold text-start">Chicken Burger</p>
 					<div class=" d-flex"><div class="card-text text-success fw-bold text-start">$29.99</div> <div class="ms-2">1X</div>
@@ -306,8 +322,8 @@ footer{
 			</div>
 			
 			<div class="col-sm-12 col-sm-4 col-md-4 col-lg-3 card w-100  text-center rounded-4 mt-3 " >
-				<div class="card-body d-flex row p-2">
-					<img style="wigth:25px; height:60px" src="./orange-juice.png" class="card-img-start p-0 col-2 ms-3 rounded-4" >
+				<div class="card-body d-flex row p-2 p-md-0">
+					<img style="wigth:25px; height:60px" src="./orange-juice.png" class="card-img-start p-0 p-md-1 col-2 ms-3 rounded-4" >
 					<div class="col-9">
 					<p style="font-weight:bold; font-size:14px" class="card-text mt-2 m-0 fw-bold text-start">Orange Juice</p>
 					<div class=" d-flex"><div class="card-text text-success fw-bold text-start">$10.99</div> <div class="ms-2">1X</div>
@@ -317,8 +333,8 @@ footer{
 			</div>
 			
 			<div class="col-sm-12 col-sm-4 col-md-4 col-lg-3 card w-100  text-center rounded-4 mt-3 " >
-				<div class="card-body d-flex row p-2">
-					<img style="wigth:25px; height:60px" src="./biriyani.png" class="card-img-start p-0 col-2 ms-3 rounded-4" >
+				<div class="card-body d-flex row p-2 p-md-0">
+					<img style="wigth:25px; height:60px" src="./biriyani.png" class="card-img-start p-0 p-md-1 col-2 ms-3 rounded-4" >
 					<div class="col-9">
 					<p style="font-weight:bold; font-size:14px" class="card-text mt-2 m-0 fw-bold text-start">Biriyani</p>
 					<div class=" d-flex"><div class="card-text text-success fw-bold text-start">$30.00</div> <div class="ms-2">1X</div>	
@@ -328,8 +344,8 @@ footer{
 			</div>
 			
 			<div class="col-sm-12 col-sm-4 col-md-4 col-lg-3 card w-100  text-center rounded-4 mt-3 " >
-				<div class="card-body d-flex row p-2">
-					<img style="wigth:25px; height:60px" src="./tacos.png" class="card-img-start p-0 col-2 ms-3 rounded-4" >
+				<div class="card-body d-flex row p-2 p-md-0">
+					<img style="wigth:25px; height:60px" src="./tacos.png" class="card-img-start p-0 p-md-1 col-2 ms-3 rounded-4" >
 					<div class="col-9">
 					<p style="font-weight:bold; font-size:14px" class="card-text mt-2 m-0 fw-bold text-start">Tacos</p>
 					<div class=" d-flex"><div class="card-text text-success fw-bold text-start">$17.99</div> <div class="ms-2">1X</div>	
@@ -340,7 +356,7 @@ footer{
 			
 			<!--total summary container -->
 			<div class="row  ">
-				<div class="col d-flex mt-5">
+				<div class="col d-flex mt-5 mt-md-3">
 					<div class="text-secondary">Sub Total</div><div class="text-secondary ms-auto">$109.96</div> 
 				</div>
 			</div>
@@ -359,21 +375,21 @@ footer{
 			
 			<div class="row mt-2 d-flex">
 				<div class="col">
-					<div class="col-3 btn btn-outline-secondary shadow rounded-3  bg-white p-0 ms-3 pt-2 m-2">
+					<div class="col-3 btn btn-outline-secondary shadow rounded-3  bg-white p-0 ms-3 ms-md-1 ms-lg-3 pt-2 m-2">
 			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cash text-dark pb-2" viewBox="0 0 16 16">
   <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
   <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z"/>
 </svg>
 					</div>
 					
-					<div class="col-3 btn btn-outline-secondary shadow rounded-3 bg-white p-0 pt-2 m-2">
+					<div class="col-3 btn btn-outline-secondary shadow rounded-3 bg-white p-0 pt-2 m-2 ms-md-2">
 		<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card-2-front pb-2 text-dark" viewBox="0 0 16 16">
   <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
   <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5"/>
 </svg>
 					</div>
 					
-					<div class="col-3 btn btn-outline-secondary shadow rounded-3 bg-white p-0 pt-2 m-2">
+					<div class="col-3 btn btn-outline-secondary shadow rounded-3 bg-white p-0 pt-2 m-2 ms-md-1">
 			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-qr-code pb-2 text-dark" viewBox="0 0 16 16">
   <path d="M2 2h2v2H2z"/>
   <path d="M6 0v6H0V0zM5 1H1v4h4zM4 12H2v2h2z"/>
@@ -388,9 +404,9 @@ footer{
 			
 			<div class="row">
 				<div class="col d-flex">
-					<div class="col text-center">Cash</div>
-					<div class="col text-center">Card</div>
-					<div class="col text-center pe-lg-3 pe-xl-3">QR Code</div>
+					<div class="col text-center ms-lg-2">Cash</div>
+					<div class="col text-center ms-lg-1">Card</div>
+					<div class="col text-center pe-lg-3 pe-xl-3">QR</div>
 				</div>
 			</div>
 		
@@ -401,21 +417,21 @@ footer{
 	<footer class="container-fluid pt-3">
 		<div class="row">
 			<div class="col d-flex">
-				<div class="col-lg-2 btn btn-outline text-start border-0 fs-6 me-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right text-success" viewBox="0 0 17 18">
+				<div class="col-lg-2 col-md-2 btn btn-outline text-start border-0 fs-6 me-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right text-success" viewBox="0 0 17 18">
   <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
   <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
 </svg> Logout</div>
 			
-			<div class="col-lg-2  border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-4 mb-3 text-center text-decoration-none text-start rounded-5 " href="">
-			<div class="col-lg-2 rounded-circle bg-warning fs-5 p-2 ">T1</div> <div class="col-lg-7 text-dark fw-bold ">Floyd miles<br><text class="text-secondary fw-light me-3">6 items -></text></div></div>
+			<div class="col-lg-2 d-none d-md-flex col-md-3  border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-4 mb-1 m-md-0 text-center text-decoration-none text-start rounded-5 " href="">
+			<div class="col-lg-2 col-md-3 col-xl-3 col-xxl-2 rounded-circle bg-warning fs-6 pt-2 my-1 ">T1</div> <div class="col-lg-7 text-dark fw-bold ">Floyd miles<br><text class="text-secondary fw-light me-3">6 items -></text></div></div>
 			
-			<div class="col-lg-2  border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-4 mb-3 text-center text-decoration-none text-start rounded-5 " href="">
-			<div class="col-lg-2 rounded-circle bg-warning fs-5 p-2 ">T1</div> <div class="col-lg-7 text-dark fw-bold ">Bessie cor...<br><text class="text-secondary fw-light  me-3">6 items -></text></div><div style="font-size:10px;" class="bg-success mb-4 rounded-4 pt-1 pb-1 px-lg-2 text-white">process</div></div>
+			<div class="col-lg-2 d-none d-lg-flex col-md-3 border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-4 mb-1 text-center text-decoration-none text-start rounded-5 " href="">
+			<div class="col-lg-2 col-md-3 col-xl-3 col-xxl-2 rounded-circle bg-warning fs-6 pt-2 my-1">T2</div> <div class="col-lg-7 text-dark fw-bold ">Bessie cor...<br><text class="text-secondary fw-light  me-3">6 items -></text></div><div style="font-size:10px;" class="bg-success mb-4 rounded-4 pt-1 pb-1 px-lg-2 text-white">process</div></div>
 			
-			<div class="col-lg-2  border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-4 mb-3 text-center text-decoration-none text-start rounded-5 " href="">
-			<div class="col-lg-2 rounded-circle bg-warning fs-5 p-2 ">T1</div> <div class="col-lg-7 text-dark fw-bold ">Ralph edw...<br><text class="text-secondary fw-light  me-3">6 items -></text></div><div style="font-size:10px;" class="bg-success mb-4 rounded-4 pt-1 pb-1 px-lg-2 text-white">process</div></div>
+			<div class="col-lg-2  border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-4 mb-1 text-center text-decoration-none text-start rounded-5 " href="">
+			<div class="col-lg-2 col-md-3 col-xl-3 col-xxl-2 rounded-circle bg-warning fs-6 pt-2 my-1">T3</div> <div class="col-lg-7 text-dark fw-bold ">Ralph edwa...<br><text class="text-secondary fw-light  me-3">6 items -></text></div><div style="font-size:10px;" class="bg-success mb-4 rounded-4 pt-1 pb-1 px-lg-2 text-white">process</div></div>
 			
-			<div class="col btn btn-sm btn-success rounded-4 w-100 fs-6 ms-5 mb-3"><div class="mt-3 mb-3">Place Order</div>
+			<div class="col btn btn-sm btn-success rounded-4 w-100 fs-6 ms-5 mb-3 mb-lg-1"><div class="mt-3 mb-3">Place Order</div>
 			</div>
 			
 			</div>
