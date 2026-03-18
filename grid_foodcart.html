@@ -10,8 +10,8 @@
 body{
 	min-height:100vh;
 	display:grid;
-	grid-template-columns:210px auto 300px;
-	grid-template-rows:auto 1fr auto;
+	grid-template-columns:210px auto 350px;
+	grid-template-rows:70px auto auto;
 	grid-template-areas:
 	"left-sidebar navbar right-sidebar"
 	"left-sidebar main right-sidebar"
@@ -41,7 +41,6 @@ left-aside{
 
 nav{
 	grid-area:navbar;
-	
 }
 
 right-aside{
@@ -58,7 +57,7 @@ footer{
 }
 
 #food_items_container{
-  height:450px;
+  height:390px;
   padding-top:20px;
 }
 
@@ -73,6 +72,52 @@ footer{
 	padding:20px;
 	justify-content:center;
 }
+
+.t-circle{
+	width:30%;
+	height:4rem;
+	line-height:0;
+	position:relative;
+}
+
+.t-circle::after{
+	content:"";
+	display:block;
+	padding-bottom:100%;
+}
+
+.t-circle-text{
+	position:absolute;
+	bottom:50%;
+	width:100%;
+	text-align:center;
+}
+
+.logout-btn{
+	width:100px;
+}
+
+.table-card{
+	width:270px;
+	border-radius:50px;
+}
+
+.table-card-text{
+	width:120px;
+}
+
+footer{
+	height:60px;
+}
+
+.process-box{
+	height:25px;
+}
+
+.place-order-btn{
+	height:60px;
+	margin-top:15px;
+}	
 
 
 </style>
@@ -475,22 +520,23 @@ footer{
 
 <!--footer section content -->
 <footer>
-				<div class="col d-flex">
-				<div class="col-lg-2 col-md-2 btn btn-outline text-start border-0 fs-6 me-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right text-success" viewBox="0 0 17 18">
+				<div class=" d-flex">
+				<div class="logout-btn col-sm-2 col-xl-1 col-md-2 btn btn-outline text-start border-0 fs-6 mx-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right text-success" viewBox="0 0 17 18">
   <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
   <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
 </svg> Logout</div>
+		
+		<div class="col-7 d-flex overflow-x-auto overflow-y-hidden ">
+			<div class="table-card col-lg-2 d-none d-md-flex col-md-3  border border-secondary d-flex custom-btn p-2 ps-2 ms-4 mb-1 m-md-0 text-center text-decoration-none text-start " href="">
+			<div class="t-circle col-lg-2 col-md-3 col-xl-3 col-xxl-2 rounded-circle bg-warning  "><div class="t-circle-text fs-4 fw-bold">T1</div></div> <div class="table-card-text col-lg-7 text-dark ps-2 text-start fw-bold ">Floyd miles<br><text class="text-secondary fw-light me-3">6 items -></text></div></div>
 			
-			<div class="col-lg-2 d-none d-md-flex col-md-3  border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-4 mb-1 m-md-0 text-center text-decoration-none text-start rounded-5 " href="">
-			<div class="col-lg-2 col-md-3 col-xl-3 col-xxl-2 rounded-circle bg-warning fs-6 pt-2 my-1 ">T1</div> <div class="col-lg-7 text-dark fw-bold ">Floyd miles<br><text class="text-secondary fw-light me-3">6 items -></text></div></div>
+			<div class="table-card col-lg-2 d-none d-lg-flex col-md-3  border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-4 mb-1 text-center text-decoration-none text-start  " href="">
+			<div class="t-circle col-lg-2 col-md-3 col-xl-3 col-xxl-2 rounded-circle bg-warning "><div class="t-circle-text fs-4 fw-bold">T2</div></div> <div class="table-card-text col-lg-7 text-dark ps-2 text-start fw-bold ">Bessie cor...<br><text class="text-secondary fw-light  me-3">6 items -></text></div><div style="font-size:10px;" class="process-box bg-success mb-4 rounded-4 pt-1 pb-1 px-lg-2 text-white">process</div></div>
 			
-			<div class="col-lg-2 d-none d-lg-flex col-md-3 border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-4 mb-1 text-center text-decoration-none text-start rounded-5 " href="">
-			<div class="col-lg-2 col-md-3 col-xl-3 col-xxl-2 rounded-circle bg-warning fs-6 pt-2 my-1">T2</div> <div class="col-lg-7 text-dark fw-bold ">Bessie cor...<br><text class="text-secondary fw-light  me-3">6 items -></text></div><div style="font-size:10px;" class="bg-success mb-4 rounded-4 pt-1 pb-1 px-lg-2 text-white">process</div></div>
-			
-			<div class="col-lg-2 border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-4 mb-1 text-center text-decoration-none text-start rounded-5 " href="">
-			<div class="col-lg-2 col-md-3 col-xl-3 col-xxl-2 rounded-circle bg-warning fs-6 pt-2 my-1">T3</div> <div class="col-lg-7 text-dark fw-bold ">Ralph edwa...<br><text class="text-secondary fw-light  me-3">6 items -></text></div><div style="font-size:10px;" class="bg-success mb-4 rounded-4 pt-1 pb-1 px-lg-2 text-white">process</div></div>
-			
-			<div class="col btn btn-sm btn-success rounded-4 w-100 fs-6 ms-5 mb-3 mb-lg-1"><div class="mt-3 mb-3">Place Order</div>
+			<div class="table-card col-lg-2 border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-4 mb-1 text-center text-decoration-none text-start  " href="">
+			<div class="t-circle col-lg-2 col-md-3 col-xl-3 col-xxl-2 rounded-circle bg-warning "><div class="t-circle-text fs-4 fw-bold">T3</div></div> <div class="table-card-text col-lg-7 text-dark ps-2 text-start fw-bold ">Ralph edwa...<br><text class="text-secondary fw-light  me-3">6 items -></text></div><div style="font-size:10px;" class="process-box bg-success mb-4 rounded-4 pt-1 pb-1 px-lg-2 text-white">process</div></div>
+		</div>
+			<div class="place-order-btn col btn btn-sm btn-success rounded-4 w-100 fs-6  mb-3 mb-lg-1"><div class="mt-3 mb-3">Place Order</div>
 			</div>
 			
 			</div>
