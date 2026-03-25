@@ -8,14 +8,15 @@
 	
 <style>
 body{
-	min-height:100vh;
+	height:100vh;
+	max-height:100vh;
 	display:grid;
-	grid-template-columns:210px auto 350px;
+	grid-template-columns:auto 1fr 350px;
 	grid-template-rows:70px auto auto;
 	grid-template-areas:
-	"left-sidebar navbar right-sidebar"
 	"left-sidebar main right-sidebar"
-	"footer footer footer";
+	"left-sidebar main right-sidebar"
+	"footer footer right-sidebar";
 	font-family:'poppins',sans-serif !important;
 }
 
@@ -50,6 +51,8 @@ right-aside{
 
 main{
 	grid-area:main;
+	background-color:#F5F5F5;
+	margin-bottom:20px;
 }
 
 footer{
@@ -57,8 +60,8 @@ footer{
 }
 
 #food_items_container{
-  height:390px;
-  padding-top:20px;
+  height:340px;
+  
 }
 
 #added-items-list{
@@ -117,7 +120,133 @@ footer{
 .place-order-btn{
 	height:60px;
 	margin-top:15px;
+	
 }	
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+	overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+	overflow-wrap: break-word; 
+}
+
+@media screen and (min-height:800px) and (max-height:1024px) {
+body{
+	grid-template-rows:auto 850px auto;
+}
+
+#food_items_container{
+  height:670px;
+  padding-top:20px;
+} 
+
+#added-items-list{
+	 height:640px;
+}
+}
+
+@media screen and (min-height: 920px) {
+body{
+	grid-template-columns:200px auto auto;
+}
+#food_items_container{
+  height:500px;
+  padding-top:20px;
+} 
+#added-items-list{
+	 height:400px;
+}
+.hide-scrollbar {
+	width:590px;
+}
+}
+
+@media screen and (max-height: 1177px) {
+.hide-scrollbar {
+	width:590px;
+}
+}
+
+@media screen and (min-height:1024px) {
+body{
+	grid-template-rows:auto 850px auto;
+}
+
+#food_items_container{
+  height:670px;
+  padding-top:20px;
+} 
+
+#added-items-list{
+	 height:640px;
+}
+}
+
+@media screen and (min-width: 1178px)  {
+.hide-scrollbar {
+	width:590px;
+}
+}
+
+@media screen and (min-width: 1278px) {
+body{
+	grid-template-columns:206px 1fr 300px;
+}
+#food_items_container{
+  height:400px;
+  padding-top:20px;
+} 
+}
+
+@media screen and (min-width:1283px) {
+body{
+	grid-template-columns:206px 1fr 300px;
+}
+#food_items_container{
+  height:400px;
+  padding-top:20px;
+} 
+}
+
+@media screen and (min-width: 1366px)  {
+#food_items_container{
+  height:660px;
+  padding-top:20px;
+} 
+.hide-scrollbar {
+	width:890px;
+}
+}
+
+@media screen and (min-width:1580px) {
+body{
+	grid-template-columns:206px 1fr 300px;
+}
+#food_items_container{
+  height:440px;
+  padding-top:20px;
+} 
+.hide-scrollbar {
+	width:70%;
+}
+}
+
+@media screen and (max-width:1600px) and (min-width: 1367px) {
+body{
+	grid-template-columns:206px 1fr 300px ;
+}
+#food_items_container{
+  height:400px;
+  padding-top:20px;
+} 
+}
+
+
+
 
 
 </style>
@@ -156,29 +285,7 @@ footer{
 </left-aside>
 
 
-<!--center block main navbar -->
-<nav>
-	<div class="d-flex">
-			<div class="col-1 flex-column btn btn-outline-success shadow rounded-4 border-0 bg-white p-0 pt-2 m-2">
-			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list text-dark pt-1 p-0 " viewBox="0 0 14 16">
-  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-</svg>
-			</div>
-			
-			<div class="col-9 bg-white m-2 shadow rounded-4">
-			<label><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-search ms-3 mt-2 mb-3" viewBox="0 0 16 16">
-  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-</svg></label>
-			<input class="form-control-sm border-0 mt-2 mb-2" type="text" placeholder="Search Prodeuct here..."/>
-			</div>
-			
-			<div class="col-1 flex-column btn btn-outline-success shadow rounded-4 border-0 bg-white p-0 pt-2 m-2">
-			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-sliders text-dark pt-1" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"/>
-</svg>
-			</div>
-			</div>
-</nav>
+
 
 <!--right side info bar -->
 <right-aside>
@@ -299,7 +406,7 @@ footer{
 			<!--total summary container -->
 			<div class="  ">
 				<div class="col d-flex mt-5 p-0 mt-md-3">
-					<div class="text-secondary">Sub Total</div><div class="text-secondary ms-auto">$109.96</div> 
+					<div class="text-secondary mt-3">Sub Total</div><div class="text-secondary mt-3 ms-auto">$109.96</div> 
 				</div>
 			</div>
 			
@@ -351,6 +458,8 @@ footer{
 				</div>
 			</div>
 			
+			<div class="place-order-btn col btn btn-sm btn-success rounded-4 w-100 fs-6 mt-4 mb-3 mb-lg-1"><div class="mt-3 mb-3">Place Order</div>
+			</div>
 		
 		</div>
 </right-aside>
@@ -358,6 +467,31 @@ footer{
 
 <!--center block main content -->
 <main>
+
+<!--center block main navbar -->
+<nav>
+	<div class="d-flex">
+			<div class="col-1 flex-column btn btn-outline-success shadow rounded-4 border-0 bg-white p-0 pt-2 m-2">
+			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list text-dark pt-1 p-0 " viewBox="0 0 14 16">
+				<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+			</svg>
+			</div>
+			
+			<div class="col-9 bg-white m-2 shadow rounded-4">
+			<label><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-search ms-3 mt-2 mb-3" viewBox="0 0 16 16">
+				<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+			</svg></label>
+			<input class="form-control-sm border-0 mt-2 mb-2" type="text" placeholder="Search Prodeuct here..."/>
+			</div>
+			
+			<div class="col-1 flex-column btn btn-outline-success shadow rounded-4 border-0 bg-white p-0 pt-2 m-2">
+			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-sliders text-dark pt-1" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"/>
+			</svg>
+			</div>
+			</div>
+</nav>
+
 	<div class="d-flex overflow-x-auto overflow-y-hidden m-2">
 			<div class="card hover-effect rounded-4 shadow mb-3 ms-2 mt-2 me-2 col-12 col-sm-6 col-md-3 ">
 				<div class="card-body ">
@@ -423,8 +557,8 @@ footer{
 		</div>
 		
 		<!--food selection container -->
-		<div id="food_items_container" class=" d-grid ">
-		<div class="grid-container row g-3 overflow-y-auto overflow-x-hidden ">
+		<div id="food_items_container" class=" d-grid p-3 ">
+		<div class="grid-container row overflow-y-auto overflow-x-hidden ">
 			<div class=" card  hover-effect text-center rounded-4 ">
 				<img style="wigth:40px; height:130px" src="./burger.png" class=" ms-2 mt-3 me-2  rounded-4" alt="...">
 				<div class="card-body p-2">
@@ -526,9 +660,9 @@ footer{
   <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
 </svg> Logout</div>
 		
-		<div class="col-7 d-flex overflow-x-auto overflow-y-hidden ">
-			<div class="table-card col-lg-2 d-none d-md-flex col-md-3  border border-secondary d-flex custom-btn p-2 ps-2 ms-4 mb-1 m-md-0 text-center text-decoration-none text-start " href="">
-			<div class="t-circle col-lg-2 col-md-3 col-xl-3 col-xxl-2 rounded-circle bg-warning  "><div class="t-circle-text fs-4 fw-bold">T1</div></div> <div class="table-card-text col-lg-7 text-dark ps-2 text-start fw-bold ">Floyd miles<br><text class="text-secondary fw-light me-3">6 items -></text></div></div>
+		<div class="col-7 d-flex hide-scrollbar  ">
+			<div class="table-card col-lg-2 d-none d-lg-flex col-md-3  border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-2 mb-1 text-center text-decoration-none text-start  " href="">
+			<div class="t-circle col-lg-2 col-md-3 col-xl-3 col-xxl-2 rounded-circle bg-warning pb-0 "><div class="t-circle-text fs-4 fw-bold">T1</div></div> <div class="table-card-text col-lg-7 text-dark ps-2 text-start fw-bold ">Floyd miles<br><text class="text-secondary fw-light me-3">6 items -></text></div></div>
 			
 			<div class="table-card col-lg-2 d-none d-lg-flex col-md-3  border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-4 mb-1 text-center text-decoration-none text-start  " href="">
 			<div class="t-circle col-lg-2 col-md-3 col-xl-3 col-xxl-2 rounded-circle bg-warning "><div class="t-circle-text fs-4 fw-bold">T2</div></div> <div class="table-card-text col-lg-7 text-dark ps-2 text-start fw-bold ">Bessie cor...<br><text class="text-secondary fw-light  me-3">6 items -></text></div><div style="font-size:10px;" class="process-box bg-success mb-4 rounded-4 pt-1 pb-1 px-lg-2 text-white">process</div></div>
@@ -536,8 +670,7 @@ footer{
 			<div class="table-card col-lg-2 border border-secondary d-flex custom-btn p-2 ps-2 pe-4 ms-4 mb-1 text-center text-decoration-none text-start  " href="">
 			<div class="t-circle col-lg-2 col-md-3 col-xl-3 col-xxl-2 rounded-circle bg-warning "><div class="t-circle-text fs-4 fw-bold">T3</div></div> <div class="table-card-text col-lg-7 text-dark ps-2 text-start fw-bold ">Ralph edwa...<br><text class="text-secondary fw-light  me-3">6 items -></text></div><div style="font-size:10px;" class="process-box bg-success mb-4 rounded-4 pt-1 pb-1 px-lg-2 text-white">process</div></div>
 		</div>
-			<div class="place-order-btn col btn btn-sm btn-success rounded-4 w-100 fs-6  mb-3 mb-lg-1"><div class="mt-3 mb-3">Place Order</div>
-			</div>
+			
 			
 			</div>
 </footer>
